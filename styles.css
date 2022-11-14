@@ -11,6 +11,7 @@ body {
 img {
 	display: block;
 	max-width: 100%;
+	object-fit: cover;
 }
 
 a {
@@ -19,6 +20,11 @@ a {
 
 ul {
 	list-style: none;
+}
+html {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -34,10 +40,79 @@ body {
 }
 
 .container {
-	max-width: 1170px;
+	/* max-width: 1170px;
 	padding: 0 15px;
-	margin: 0 auto;
+	margin: 0 auto; */
+}
+
+.header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 4.3rem 25.2rem 0 25.2rem;
+}
+.header-logo-image {
+	height: 35px;
+}
+.header-menu {
+	display: flex;
+	gap: 20px;
+	align-items: center;
+	justify-content: space-between;
+}
+.header-menu-link {
+	color: #2e342f;
+	font-size: 16px;
+	font-weight: 600;
+}
+.button--primary {
+	padding: 1.55rem 2rem;
+	background: #f18200;
+	border-radius: 8px;
+	color: #2e342f;
+	font-size: 14px;
+	line-height: 50px;
+}
+.header-menu-item {
+	position: relative;
+	padding: 20px 0;
+	cursor: pointer;
+}
+.header-menu-item::before {
+	position: absolute;
+	content: "";
+	bottom: 0;
+	height: 3px;
+	background-color: #f18200;
+	width: 0;
+	transition: 0.3s;
+}
+.header-menu-item:hover::before {
+	width: 100%;
+}
+section {
+	padding: 0px 252px;
 }
 .banner {
 	background-color: #ecfffb;
+	padding-top: 12.1rem;
+	padding-bottom: 76px;
+}
+.image-banner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.image-banner img:first-child {
+	width: 504px;
+	/* height: 319px; */
+}
+.image-banner img:last-child {
+	width: 504px;
+	/* height: 319px; */
 }
