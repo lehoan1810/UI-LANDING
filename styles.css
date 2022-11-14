@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700&display=swap");
 * {
 	margin: 0;
 	padding: 0;
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: "Nunito", sans-serif;
 	font-size: 16px;
 	line-height: 1;
 	background-color: white;
@@ -115,4 +116,65 @@ section {
 .image-banner img:last-child {
 	width: 504px;
 	/* height: 319px; */
+}
+.about {
+	text-align: center;
+	padding-top: 12.1rem;
+	padding-bottom: 76px;
+}
+.about h1 {
+	font-weight: 700;
+	font-size: 48px;
+	line-height: 60px;
+}
+.about-askany {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-top: 24px;
+}
+.about-item {
+	width: calc(50% - 12px);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	padding: 38px 29px 0px 29px;
+	height: 456px;
+	border-radius: 12px;
+	margin-top: 24px;
+}
+.about-item span {
+	text-align: left;
+	padding-top: 3.2rem;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	letter-spacing: 0.1px;
+	word-break: break-word;
+	font-style: normal;
+	letter-spacing: 0.1px;
+}
+.about-item h2 {
+	padding-top: 3.2rem;
+}
+.about-item img {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+}
+.about-item:nth-child(1) {
+	background: #c9fcf2;
+}
+.about-item:nth-child(2) {
+	background: #207364;
+	color: white;
+}
+.about-item:nth-child(3) {
+	background: #207364;
+	color: white;
+}
+.about-item:nth-child(4) {
+	background: #c9fcf2;
 }
