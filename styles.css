@@ -19,9 +19,9 @@ a {
 	text-decoration: none;
 }
 
-ul {
+/* ul {
 	list-style: none;
-}
+} */
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
@@ -43,6 +43,7 @@ body {
 .container {
 	/* max-width: 1170px; */
 	/* max-width: 1440px; */
+	/* max-width: 1188px; */
 	/* padding: 0 15px; */
 	margin: 0 auto;
 }
@@ -273,7 +274,9 @@ section {
 }
 
 /* ABOUT */
-
+.about-reverse {
+	flex-direction: row-reverse;
+}
 .title-about {
 	padding: 0 120px;
 }
@@ -287,6 +290,88 @@ section {
 	letter-spacing: 0.1px;
 	color: #2e342f;
 	padding: 0 100px;
+}
+
+.about-item {
+	display: flex;
+	/* align-items: center; */
+	justify-content: space-between;
+	padding: 49.5px 52.88px 49.5px 49px;
+	background: #ffffff;
+	box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05);
+	border-radius: 20px;
+	cursor: pointer;
+	gap: 98px;
+	margin-top: 100px;
+}
+.about-item:first-child {
+	margin-top: 48px;
+}
+.about-item img {
+	width: 355px;
+	height: 355px;
+	object-fit: cover;
+}
+.about-item-desc {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-direction: column;
+}
+.about-item-content h1 {
+	letter-spacing: 0.1px;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 50px;
+	color: #ff9900;
+}
+.about-item-content h2 {
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 40px;
+	letter-spacing: 0.1px;
+	margin-top: 4px;
+}
+.about-item-content {
+	text-align: left;
+}
+.about-item-exp {
+	text-align: left;
+	margin-top: 16px;
+	padding-left: 25px;
+}
+.about-item-exp li {
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 23px;
+	color: #555b56;
+	letter-spacing: 0.1px;
+}
+.about-item-exp li strong {
+	font-weight: 700;
+}
+.about-item-button {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 12px;
+}
+.button-about {
+	border: 1px solid #2e342f;
+	border-radius: 12px;
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 38px;
+	color: #2e342f;
+	letter-spacing: 0.1px;
+}
+.button-transparent {
+	padding: 15.6px 24px;
+}
+.button-contact {
+	background: #ff9900;
+	border: none;
+	padding: 15.6px 22px;
 }
 
 @media (max-width: 1200px) {
