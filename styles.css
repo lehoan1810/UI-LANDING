@@ -271,6 +271,24 @@ section {
 		color: #f18200;
 	}
 }
+
+/* ABOUT */
+
+.title-about {
+	padding: 0 120px;
+}
+
+.title-about-desc {
+	margin-top: 48px;
+	font-weight: 600;
+	font-size: 24px;
+	line-height: 40px;
+	text-align: center;
+	letter-spacing: 0.1px;
+	color: #2e342f;
+	padding: 0 100px;
+}
+
 @media (max-width: 1200px) {
 	.header {
 		padding: 2rem 2rem;
